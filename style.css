@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap');
+
+* {
+    box-sizing: border-box; /* di default le dimensioni reali di un elemento sono calcolate come height/width + padding. con questa opzione le dimensioni reali saranno quelle precisamente definite solo da width/height */
+    margin:0; /* avoid the application of browser's margin for some elements */
+    padding:0; /* avoid the application of browser's padding for some elements */ 
+}
+
+body{
+    background-image: url(lightmap.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+li, .home, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color:white;
+    text-decoration:none; /*elimina le sottolineature nei link e tutte le decorazioni date di default dal browser */
+}
+
+header {
+    display:flex; /* necessario per applicare il justify content space between */
+    justify-content:space-between; /* il justify content allinea gli elmenti nel flexible container quando gli elementi non utilizzando tutto lo spazio orizzontale. Lo space between aggiunge spazio tra gli elementi distribuendoli in modo orizzontale e occupando tutto il container*/
+    align-items: center;/*centra gli elementi orizzontalmente e verticalmente all'interno del container */
+    padding:40px 30px; /*applica il padding nei confronti degli elementi dentro l'header */
+    background-color: #090909;
+    height: 30px;
+}
+
+nav {
+    display:flex;
+    justify-content:space-between;
+}
+
+.nav_links {
+    list-style:none; /*elimina i pallini dall'elenco */
+    margin: auto;
+    margin-left: 10px;
+}
+
+.nav_links li {
+    display: inline-block; /* posiziona gli elementi della lista orizzontalmente */
+    padding: 0px 20px; /* applicare una distanza di 0 px in alto e in basso e di 20px a destra e a sinistra */
+}
+
+.nav_links li a {
+    transition:all 0.3s ease 0s; /* qualsiasi cambiamento nell'altezza, larghezza, colore  ecc.. dato tipo dal cursore che va sopra l'elemento, avrà un'animazione graduale della durata di 0.2 secondi in questo caso */
+    border-radius: 50px;
+}
+
+.nav_links li a:hover {
+    color: rgba(0,163,169,1);
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(0,163,169,0.8);
+    border: none; /* elimina il bordo del bottone */
+    border-radius: 50px;
+    cursor: pointer; /*quando passo sull'immagine il cursore diventa manina */
+    transition:all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(0,163,169,1);
+}
+
+div.main_content {
+    margin:70px 100px;
+    padding:30px 30px;
+    background-color:rgba(255,255,255,0.7);
+    border-radius: 30px;
+    display:inline-block;
+}
+
+.contents {
+    display:flex;
+}
+
+.my_face {
+    border-radius: 30px;
+    height: 90px;
+    filter: brightness(130%);
+    margin-right: 20px;
+}
+
+.presentation {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    text-align:justify;
+    line-height: 30px;
+}
+
+footer {
+    padding:10px 30px;
+    background-color: #090909;
+    position:fixed;
+    bottom:0;
+    width:100%;
+    z-index:1;
+}
+
+.p_footer {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color:white;
+    text-decoration:none;
+    text-align:right;
+}
+
+.a_footer {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color:white;
+    text-decoration:none;
+    transition:all 0.3s ease 0s;
+}
+
+.a_footer:hover {
+    color: rgba(0,163,169,1);
+}
