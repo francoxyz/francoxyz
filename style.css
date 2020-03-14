@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
 
 * {
     box-sizing: border-box; /* di default le dimensioni reali di un elemento sono calcolate come height/width + padding. con questa opzione le dimensioni reali saranno quelle precisamente definite solo da width/height */
@@ -7,14 +6,21 @@
     padding:0; /* avoid the application of browser's padding for some elements */ 
 }
 
-body{
-    background-image: url(lightmap.jpg);
+body.body_index{
+    background-image: url(img/bck_index.jpg);
     background-size: cover;
     background-attachment: fixed;
-    
+    background-position:center;
 }
 
-li, .home, button {
+body.body_curriculum{
+    background-image: url(img/bck_curriculum1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position:center;
+}
+
+.nav_links li, .home, button {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 15px;
@@ -29,6 +35,9 @@ header {
     padding:40px 30px; /*applica il padding nei confronti degli elementi dentro l'header */
     background-color: #090909;
     height: 30px;
+    position:sticky;
+    top:0px;
+    z-index:1;
 }
 
 nav {
@@ -71,7 +80,7 @@ button:hover {
 
 div.main_content {
     margin:70px 100px;
-    padding:30px 30px;
+    padding:25px 25px;
     background-color:rgba(255,255,255,0.7);
     border-radius: 30px;
     display:inline-block;
@@ -84,16 +93,88 @@ div.main_content {
 .my_face {
     border-radius: 30px;
     height: 90px;
+    width:90px;
     filter: brightness(130%);
     margin-right: 20px;
 }
 
 .presentation {
-    font-family: "Montserrat Alternates", sans-serif;
-    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
     font-size: 17px;
     text-align:justify;
     line-height: 30px;
+}
+
+.cv_main {
+    display:flex;
+    position:relative;
+}
+
+.sidebar {
+    position:fixed;
+    width:300px;
+    height:100%;
+    background-color:rgba(255,255,255,0.7);
+    padding: 90px 60px;
+}
+
+.sidebar ul li {
+    list-style:none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 15.5px;
+    line-height: 50px;
+}
+
+.sidebar ul li a{
+    text-decoration:none;
+    color: #343434;;
+}
+
+.cv_content {
+    margin-left:400px;
+    margin-right:100px;
+    margin-top: 90px;
+}
+
+.cv_content h1 {
+    background-color:rgba(255,255,255,0.7);
+    padding: 20px;
+    border-radius:30px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    text-align:center;
+    margin-bottom:40px;
+    display:table; /* per limitare la larghezza dell'h1 al suo contenuto */
+}
+
+.cv_card {
+    background-color:rgba(255,255,255,0.7);
+    padding: 20px;
+    border-radius:30px;
+    width:900px;
+}
+
+.text1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.text2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.text3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 17px;
 }
 
 footer {
@@ -125,4 +206,14 @@ footer {
 
 .a_footer:hover {
     color: rgba(0,163,169,1);
+}
+
+@media all and (max-width:768px) {
+    div.main_content {
+        margin:70px 50px;
+    }
+    div.contents {
+        flex-direction:column;
+        align-items: center;
+    }
 }
