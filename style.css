@@ -7,14 +7,14 @@
 }
 
 body.body_index{
-    background-image: url(img/bck_index.jpg);
+    background-image: url(img/bck_index.png);
     background-size: cover;
     background-attachment: fixed;
     background-position:center;
 }
 
 body.body_curriculum{
-    background-image: url(img/bck_curriculum1.jpg);
+    background-image: url(img/bck_curriculum.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position:center;
