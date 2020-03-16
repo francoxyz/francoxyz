@@ -252,6 +252,37 @@ div.main_content {
     margin-left:10px;
 }
 
+.lang_container {
+    display:flex;
+    justify-content: space-around;
+}
+
+.lang_card {
+    background-color: rgba(255,255,255,0.8);
+    padding: 20px 35px;
+    border-radius:30px;
+    justify-content: space-between;
+    width: calc(96%/3);
+    display:inline-block;
+}
+
+.card_content {
+    display:flex;
+}
+
+.lang_flag {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+
+.text_lang {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 30px;
+}
+
 footer {
     padding:10px 30px;
     background-color: #090909;
