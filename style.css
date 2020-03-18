@@ -27,6 +27,8 @@ body.body_portfolio {
     background-position:center;
 }
 
+body.bdthesis_body
+
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++ NAVBAR +++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 .nav_links li, .home, button {
@@ -126,7 +128,7 @@ div.main_content {
 .sidebar {
     position:fixed;
     width:300px;
-    height:100%;
+    height: 100%;
     background-color:rgba(255,255,255,0.7);
     padding: 90px 60px;
 }
@@ -148,6 +150,8 @@ div.main_content {
     margin-left:400px;
     margin-right:100px;
     margin-top:45px;
+    display:flex;
+    flex-direction: column;
 }
 
 .cv_section {
@@ -155,6 +159,8 @@ div.main_content {
     background-color: rgba(255,255,255,0.3);
     padding:15px;
     border-radius:30px;
+    display:flex;
+    flex-direction: column;
 }
 
 .cv_content h1 {
@@ -207,6 +213,7 @@ div.main_content {
     font-weight: 500;
     font-size: 15px;
     background-color:rgba(255,255,255,0.4);
+    display:inline-block;
 }
 
 .link_intext {
@@ -230,6 +237,7 @@ div.main_content {
     width: calc(98%/2);
     display: flex;
     flex-direction: column;
+    min-width:370px;
 }
 
 .skills_row {
@@ -277,6 +285,7 @@ div.main_content {
     border-radius:30px;
     width: calc(96%/3);
     display:flex;
+    min-width:270px;
 }
 
 .lang_flag {
@@ -360,6 +369,31 @@ div.main_content {
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
     font-size: 13px;
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++ DBTHESIS PROJECT +++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.dbthesis_main {
+    display:flex;
+    flex-direction: column;
+}
+
+.project_title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 27px;
+    text-align:center;
+    margin-top:45px;
+    margin-bottom:45px;
+}
+
+.dbthesis_text {
+    padding:0px 90px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 35px;
 }
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++ FOOTER +++++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -457,6 +491,40 @@ footer {
 
 @media all and (max-width:1380px) {
     .sidebar {
-    
+        display:none;
+    }
+    .cv_content {
+        margin-right:10%;
+        margin-left:10%;
+    }
+}
+
+@media all and (max-width:1000px) {
+    .cv_content {
+        margin-right:5%;
+        margin-left:5%;
+    }
+    .skills_main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .skills_column {
+        width:70%;
+        margin-bottom:10px;
+    }
+    .lang_container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .lang_card {
+        margin-bottom:10px;
+    }
+
+}
+
+@media all and (max-width:900px) {
+    .period {
+        position: sticky;
+        margin-top: 10px;
     }
 }
