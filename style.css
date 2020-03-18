@@ -20,6 +20,15 @@ body.body_curriculum{
     background-position:center;
 }
 
+body.body_portfolio {
+    background-image: url(img/bck_portfolio.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position:center;
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++ NAVBAR +++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
 .nav_links li, .home, button {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -78,6 +87,8 @@ button:hover {
     background-color: rgba(0,163,169,1);
 }
 
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++ HOMEPAGE +++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
 div.main_content {
     margin:70px 100px;
     padding:25px 25px;
@@ -105,6 +116,8 @@ div.main_content {
     text-align:justify;
     line-height: 30px;
 }
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++ CURRICULUM +++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 .cv_main {
     display:flex;
@@ -134,7 +147,7 @@ div.main_content {
 .cv_content {
     margin-left:400px;
     margin-right:100px;
-    margin-top: 90px;
+    margin-top:45px;
 }
 
 .cv_section {
@@ -153,7 +166,6 @@ div.main_content {
     font-size: 30px;
     text-align:center;
     margin-bottom:20px;
-     /* per limitare la larghezza dell'h1 al suo contenuto */
 }
 
 .cv_card {
@@ -206,32 +218,38 @@ div.main_content {
 
 .skills_main {
     display:flex;
-    justify-content: space-between;
+    justify-content:space-between;
 }
 
 .skills_column {
-    padding: 20px 50px;
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
     border-radius:30px;
     background-color: rgba(255,255,255,0.8);
-    width: calc(98%/2)
+    width: calc(98%/2);
+    display: flex;
+    flex-direction: column;
 }
 
-.skills_column ul {
-    list-style:none;
+.skills_row {
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:30px;
+}
+
+.skills_text {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 20px;
-    line-height: 60px;
-}
-
-.skills_column ul li {
-    display:flex;
-    justify-content: space-between;
+    width: calc(98%/2);
+    margin-right:10px;
 }
 
 .skills_boxes {
-    display: inline-block;
-    justify-content: space-between;
+    display:flex;
+    width: calc(98%/2);
+    justify-content:space-around;
 }
 
 .checked {
@@ -239,8 +257,6 @@ div.main_content {
     width:30px;
     border-radius:7px;
     background-color: #172436;
-    display: inline-block;
-    margin-left:10px;
 }
 
 .unchecked {
@@ -248,8 +264,6 @@ div.main_content {
     width:30px;
     border-radius:7px;
     background-color: #dbb17e;
-    display: inline-block;
-    margin-left:10px;
 }
 
 .lang_container {
@@ -261,19 +275,17 @@ div.main_content {
     background-color: rgba(255,255,255,0.8);
     padding: 20px 35px;
     border-radius:30px;
-    justify-content: space-between;
     width: calc(96%/3);
-    display:inline-block;
-}
-
-.card_content {
     display:flex;
 }
 
 .lang_flag {
+   margin-right: 20px;
+}
+
+.lang_flag img{
     width: 60px;
     height: 60px;
-    margin-right: 20px;
 }
 
 .text_lang {
@@ -282,6 +294,75 @@ div.main_content {
     font-size: 19px;
     line-height: 30px;
 }
+
+.jumptarget::before{
+    content:"";
+    display:block;
+    height:115px;
+    margin:-115px 0 0;
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++ PORTFOLIO +++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.portfolio_main {
+    margin-top: 45px;
+    margin-bottom:80px;
+    margin-right:45px;
+    margin-left:45px;
+}
+
+.portfolio_row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:45px;
+}
+
+.portfolio_card {
+    background-color: rgba(255,255,255,0.8);
+    padding: 20px 20px;
+    border-radius:20px;
+    width: calc(96%/2);
+    display:inline-block;
+    text-decoration:none;
+    color:black;
+    transition:all 0.3s ease 0s;
+}
+
+.portfolio_card:hover {
+    background-color: rgba(255,255,255,0.9);
+    border:solid #0a123c 1px;
+}
+
+.portfolio_img {
+    margin-bottom:15px;
+}
+
+.portfolio_img img {
+    width:100%;
+    height:100%; 
+}
+       
+.portfolio_text1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    margin-bottom: 13px;
+}
+
+.portfolio_text2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 11px;
+}
+
+.portfolio_text3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++ FOOTER +++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 footer {
     padding:10px 30px;
@@ -310,16 +391,51 @@ footer {
     transition:all 0.3s ease 0s;
 }
 
+.a_footer_email {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color:white;
+    text-decoration:none;
+    transition:all 0.3s ease 0s;
+    display: inline-block;
+    position:relative;
+    cursor: default;
+}
+
+.a_footer_email:hover {
+    color: rgba(0,163,169,1);
+}
+
 .a_footer:hover {
     color: rgba(0,163,169,1);
 }
 
-.jumptarget::before{
-    content:"";
-    display:block;
-    height:115px;
-    margin:-115px 0 0;
+.email_tooltip {
+    visibility: hidden;
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    padding: 7px 7px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 170%;
+    left:-90px;
 }
+
+.email_tooltip::after {
+    content: "";
+    position: relative;
+    top: 100%;
+    border-width: 5px;
+}
+
+.a_footer_email:hover .email_tooltip {
+    visibility: visible;
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++ OTHER +++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 @media all and (max-width:768px) {
     div.main_content {
@@ -328,5 +444,19 @@ footer {
     div.contents {
         flex-direction:column;
         align-items: center;
+    }
+    .portfolio_row {
+        flex-direction:column;
+        margin-bottom:0px;
+    }
+    .portfolio_card {
+        width:100%;
+        margin-bottom:45px;
+    }
+}
+
+@media all and (max-width:1380px) {
+    .sidebar {
+    
     }
 }
