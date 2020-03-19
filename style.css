@@ -285,7 +285,7 @@ div.main_content {
     border-radius:30px;
     width: calc(96%/3);
     display:flex;
-    min-width:270px;
+    min-width:250px;
 }
 
 .lang_flag {
@@ -471,24 +471,6 @@ footer {
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++ OTHER +++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
-@media all and (max-width:768px) {
-    div.main_content {
-        margin:70px 50px;
-    }
-    div.contents {
-        flex-direction:column;
-        align-items: center;
-    }
-    .portfolio_row {
-        flex-direction:column;
-        margin-bottom:0px;
-    }
-    .portfolio_card {
-        width:100%;
-        margin-bottom:45px;
-    }
-}
-
 @media all and (max-width:1380px) {
     .sidebar {
         display:none;
@@ -526,5 +508,91 @@ footer {
     .period {
         position: sticky;
         margin-top: 10px;
+    }
+}
+
+@media all and (max-width:768px) {
+    div.main_content {
+        margin:70px 50px;
+        background-color: rgba(255,255,255,0.8);
+    }
+    div.contents {
+        flex-direction:column;
+        align-items: center;
+    }
+    .my_face {
+        margin-right:0px;
+        margin-bottom:10px;
+    }
+    .portfolio_row {
+        flex-direction:column;
+        margin-bottom:0px;
+    }
+    .portfolio_card {
+        width:100%;
+        margin-bottom:45px;
+    }
+    .portfolio_main {
+        margin-bottom:30px;
+    }
+}
+
+@media all and (max-width:490px) {
+    header {
+        padding:40px 5px;
+    }
+    .nav_links li {
+        padding:0px 10px;
+    }
+    div.main_content {
+        margin: 40px 50px;
+    }
+    .skills_column {
+        min-width: 250px;
+        padding-left: 10px;
+        padding-right: 10px;;
+    }
+    .skills_text {
+        font-size: 17px;
+    }
+    .checked , .unchecked {
+        height:10px;
+        width:20px;
+    }
+    .cv_section{
+        padding-left:10px;
+        padding-right:10px;
+        margin-bottom: 20px;
+    }
+    .text_lang {
+        font-size: 17px;
+    }
+    .cv_content h1 {
+        font-size: 25px;
+        padding:10px;
+    }
+    .text1 {
+        font-size: 18px;
+    }
+    .text2, .text3 {
+        font-size: 16px;
+    }
+    .period {
+        font-size: 12px;
+    }
+    .cv_main {
+        margin-bottom: 40px;
+    }
+    .cv_content {
+        margin-top:30px;
+    }
+    .portfolio_main {
+        margin-right: 15px;
+        margin-left: 15px;
+        margin-top:30px;
+    } 
+    div.main_content {
+        margin-right:20px;
+        margin-left:20px;
     }
 }
