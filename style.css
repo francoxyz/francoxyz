@@ -258,6 +258,7 @@ div.main_content {
     display:flex;
     width: calc(98%/2);
     justify-content:space-around;
+    align-items: center;
 }
 
 .checked {
@@ -548,13 +549,13 @@ footer {
         margin: 40px 50px;
     }
     .skills_column {
-        width:90%;
+        width:95%;
         min-width: 250px;
         padding-left: 15px;
-        padding-right: 15px;;
+        padding-right: 15px;
     }
     .skills_text {
-        font-size: 17px;
+        font-size: 16px;
     }
     .checked , .unchecked {
         height:10px;
