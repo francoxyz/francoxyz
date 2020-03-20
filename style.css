@@ -393,7 +393,7 @@ div.main_content {
     flex-direction: column;
 }
 
-.project_title {
+.project_h1 {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 27px;
@@ -403,7 +403,7 @@ div.main_content {
     padding:0 90px;
 }
 
-.project_subtitle {
+.project_h2 {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 23px;
@@ -411,6 +411,17 @@ div.main_content {
     margin-top:35px;
     margin-bottom:35px;
     padding:0 90px;
+}
+
+.project_h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-align:center;
+    margin-top:10px;
+    margin-bottom:20px;
+    padding:0 90px;
+    text-decoration: underline;
 }
 
 .dbthesis_text {
@@ -446,10 +457,18 @@ div.main_content {
 
 .tab_sf {
     width:550px;
+    margin-bottom:20px;
 }
 
-.planimetria_sp {
+.planimetry {
     width:100%;
+}
+
+.dbthesis_graphicsection {
+    display:flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
 }
 
 .dbthesis_graphic {
