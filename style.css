@@ -48,7 +48,7 @@ header {
     display:flex; /* necessario per applicare il justify content space between */
     justify-content:space-between; /* il justify content allinea gli elmenti nel flexible container quando gli elementi non utilizzando tutto lo spazio orizzontale. Lo space between aggiunge spazio tra gli elementi distribuendoli in modo orizzontale e occupando tutto il container*/
     align-items: center;/*centra gli elementi orizzontalmente e verticalmente all'interno del container */
-    padding:40px 30px; /*applica il padding nei confronti degli elementi dentro l'header */
+    padding:40px 3%; /*applica il padding nei confronti degli elementi dentro l'header */
     background-color: #090909;
     height: 30px;
     position:sticky;
@@ -58,18 +58,16 @@ header {
 
 nav {
     display:flex;
-    justify-content:space-between;
 }
 
 .nav_links {
     list-style:none; /*elimina i pallini dall'elenco */
     margin: auto;
-    margin-left: 10px;
 }
 
 .nav_links li {
     display: inline-block; /* posiziona gli elementi della lista orizzontalmente */
-    padding: 0px 20px; /* applicare una distanza di 0 px in alto e in basso e di 20px a destra e a sinistra */
+    padding:20px; /* applicare una distanza di 0 px in alto e in basso e di 20px a destra e a sinistra */
 }
 
 .nav_links li a {
@@ -92,6 +90,15 @@ button {
 
 button:hover {
     background-color: rgba(0,163,169,1);
+}
+
+.nav_project {
+    color: rgba(0,163,169,1);
+    display:inline-block;
+    padding:20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
 }
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++ HOMEPAGE +++++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -380,14 +387,6 @@ div.main_content {
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++ DBTHESIS PROJECT +++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
-.separator {
-    height:40px;
-}
-
-.nav_project {
-    color: rgba(0,163,169,1)
-}
-
 .dbthesis_main {
     display:flex;
     flex-direction: column;
@@ -398,9 +397,10 @@ div.main_content {
     font-weight: 500;
     font-size: 27px;
     text-align:center;
-    margin-top:45px;
-    margin-bottom:45px;
-    padding:0 90px;
+    margin-top:60px;
+    margin-bottom:60px;
+    padding-left:7%;
+    padding-right:7%;
 }
 
 .project_h2 {
@@ -408,9 +408,10 @@ div.main_content {
     font-weight: 500;
     font-size: 23px;
     text-align:center;
-    margin-top:35px;
-    margin-bottom:35px;
-    padding:0 90px;
+    margin-top:40px;
+    margin-bottom:40px;
+    padding-left:7%;
+    padding-right:7%;
 }
 
 .project_h3 {
@@ -418,14 +419,16 @@ div.main_content {
     font-weight: 300;
     font-size: 20px;
     text-align:center;
-    margin-top:10px;
-    margin-bottom:20px;
-    padding:0 90px;
+    margin-top:40px;
+    margin-bottom:40px;
+    padding-left:7%;
+    padding-right:7%;
     text-decoration: underline;
 }
 
 .dbthesis_text {
-    padding:0px 90px;
+    padding-left:7%;
+    padding-right:7%;
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
     font-size: 20px;
@@ -434,30 +437,20 @@ div.main_content {
 }
 .project_img_container {
     display:flex;
-    padding:30px 90px;
-    justify-content: space-around;
+    padding-left:7%;
+    padding-right:7%;
+    justify-content: space-evenly;
     align-content: space-around;
     flex-wrap: wrap;
 }
 
-.roggia_img_container {
+.dbthesis_container_right {
     display:flex;
     flex-wrap: wrap;
     align-content: space-around;
-    justify-content: space-around;
-    width:650px;
-    height:500px;
-}
-
-.roggia_img {
-    width:300px;
-    height:225px;
-    border-radius: 20px;
-}
-
-.tab_sf {
-    width:550px;
-    margin-bottom:20px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
 }
 
 .planimetry {
@@ -468,12 +461,50 @@ div.main_content {
     display:flex;
     flex-wrap: wrap;
     align-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.dbthesis_graphicsection1 {
+    display:flex;
+    flex-direction: column;
+    align-content: space-around;
     justify-content: space-around;
+}
+
+.dbthesis_cad {
+    width:410px;
+    margin:10px 0px;
+}
+
+.dbthesis_table {
+    width:600px;
+    margin-bottom:20px;
 }
 
 .dbthesis_graphic {
     width:410px;
     margin:10px 0px;
+}
+
+.dbthesis_graphic0 {
+    width:600px;
+    margin:10px 0px;
+}
+
+.separator {
+    height:100px;
+    display:flex;
+    align-content: space-around;
+    justify-content: space-around;
+}
+
+.back_top button {
+    background-color: black;
+}
+
+.back_top button:hover {
+    color: rgba(0,163,169,1)
 }
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++ FOOTER +++++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -550,6 +581,12 @@ footer {
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++ MEDIA +++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
+@media all and (max-width:1396px) {
+    .dbthesis_container_right {
+        flex-direction: row;
+    }
+}
+
 @media all and (max-width:1380px) {
     .sidebar {
         display:none;
@@ -613,6 +650,15 @@ footer {
     }
     .portfolio_main {
         margin-bottom:30px;
+    }
+    .nav_project {
+        display:none;
+    }
+}
+
+@media all and (max-width:640px) {
+    .dbthesis_graphic0 {
+        width: 450px;
     }
 }
 
@@ -686,5 +732,30 @@ footer {
     div.main_content {
         margin-right:20px;
         margin-left:20px;
+    }
+    .dbthesis_graphic, .dbthesis_graphic0 {
+        width:300px;
+    }
+    .project_h1 {
+    font-size: 24px;
+    margin-top:50px;
+    margin-bottom:50px;
+    }
+
+    .project_h2 {
+        font-size: 20px;
+        margin-top:30px;
+        margin-bottom:30px;
+    }
+
+    .project_h3 {
+        font-size: 17px;
+        margin-top:30px;
+        margin-bottom:30px;
+    }
+
+    .dbthesis_text {
+        font-size: 17px;
+        line-height: 30px;
     }
 }
