@@ -34,6 +34,13 @@ body.bdthesis_body {
     background-position:center;
 }
 
+body.labenv_body {
+    background-image: url(img/lab_amb/cover.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position:center;
+}
+
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++ NAVBAR +++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 .nav_links li, .home, button {
@@ -505,6 +512,13 @@ div.main_content {
 
 .back_top button:hover {
     color: rgba(0,163,169,1)
+}
+
+.labenv_panel {
+    width:100%;
+    padding-left:7%;
+    padding-right:7%;
+    margin-bottom:3%;
 }
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++ FOOTER +++++++++++++++++++++++++++++++++++++++++++++++++++ */
