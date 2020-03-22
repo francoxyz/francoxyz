@@ -35,7 +35,7 @@ body.bdthesis_body {
 }
 
 body.labenv_body {
-    background-image: url(img/lab_amb/cover.jpg);
+    background-image: url(img/lab_amb/cover.webp);
     background-size: cover;
     background-attachment: fixed;
     background-position:center;
