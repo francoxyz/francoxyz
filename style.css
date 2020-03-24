@@ -35,7 +35,14 @@ body.bdthesis_body {
 }
 
 body.labenv_body {
-    background-image: url(img/lab_amb/cover.webp);
+    background-image: url(img/lab_amb/bck_labenv.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position:center;
+}
+
+body.labproj_body {
+    background-image: url(img/lab_projecto/bck_labproj.webp);
     background-size: cover;
     background-attachment: fixed;
     background-position:center;
@@ -392,7 +399,7 @@ div.main_content {
     font-size: 13px;
 }
 
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++ DBTHESIS PROJECT +++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++ PROJECTS +++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 .dbthesis_main {
     display:flex;
