@@ -528,6 +528,19 @@ div.main_content {
     margin-bottom:3%;
 }
 
+.monit_main {
+    display:flex;
+    flex-direction: column;
+    padding-left:7%;
+    padding-right:7%;
+}
+
+.monit_map {
+    width:50%;
+    min-width:410px;
+    align-self: center;
+}
+
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++ FOOTER +++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 footer {
