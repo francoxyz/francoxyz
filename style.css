@@ -48,6 +48,13 @@ body.labproj_body {
     background-position:center;
 }
 
+body.monit_body {
+    background-image: url(img/monit_exam/bck_monit.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position:center;
+}
+
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++ NAVBAR +++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 .nav_links li, .home, button {
@@ -332,11 +339,11 @@ div.main_content {
     line-height: 30px;
 }
 
-.jumptarget::before{
+.jumptarget::before {
     content:"";
     display:block;
-    height:115px;
-    margin:-115px 0 0;
+    height:2000px;
+    margin:-2000px 0 0;
 }
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++ PORTFOLIO +++++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -531,6 +538,15 @@ div.main_content {
 .monit_main {
     display:flex;
     flex-direction: column;
+}
+
+.monit_row {
+    display:flex;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1% 0;
     padding-left:7%;
     padding-right:7%;
 }
@@ -538,7 +554,53 @@ div.main_content {
 .monit_map {
     width:50%;
     min-width:410px;
-    align-self: center;
+}
+
+.monit_legend {
+    display:flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: center;
+    margin-left:5%;
+    width:32%;
+}
+
+.monit_legend_h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.monit_legend_h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    margin-top:2%;
+    margin-left:2%;
+}
+
+.monit_legend_rowcontainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.monit_legend_row {
+    margin-top:3%;
+    display: flex;
+    flex-direction: row;
+    margin-left:6%;
+}
+
+.monit_legend_box {
+    width:35px;
+    height:20px;
+}
+
+.monit_legend_h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    margin-left:3%;
 }
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++ FOOTER +++++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -690,6 +752,23 @@ footer {
     }
 }
 
+@media all and (max-width:757px) {
+    .monit_legend {
+        width: 100%;
+        margin-left:0;
+        margin-bottom:5%;
+        margin-top:2%;
+    }
+    .monit_legend_h1, .monit_legend_h2, .monit_legend_row{
+        align-self: center;
+        text-align: center;
+    }
+    .monit_legend_row {
+        width: 50%;
+    }
+}
+
+
 @media all and (max-width:640px) {
     .dbthesis_graphic0 {
         width: 450px;
@@ -791,5 +870,9 @@ footer {
     .dbthesis_text {
         font-size: 17px;
         line-height: 30px;
+    }
+
+    .monit_map {
+        min-width:100%;
     }
 }

@@ -14,7 +14,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <link rel="manifest" href="img/site.webmanifest">
 </head>
-<body class="labproj_body">
+<body class="monit_body">
     <header>
         <nav>
             <ul class="nav_links">
@@ -25,9 +25,9 @@
             </ul>
         </nav>
     </header>
+    <a name="back-to-top" class="jumptarget"></a>
     <main class="monit_main">
-        <a name="back-to-top" class="jumptarget"></a>
-        <h1 class="project_h1">Urban project for a critical area in Odivelas (Lisbon metropolitan area)</h1>
+        <h1 class="project_h1">Detection and classification of urban vegetation at municipal level</h1>
         <p class="dbthesis_text">
             This work, starting from a 4-band LiDAR orthophoto (RGB + infrared NIR) and a DTM of the Municipality of 
             Florence freely downloadable from the Geoscope of Tuscany Region website, mapped the urban green
@@ -37,61 +37,263 @@
             height value for the green arean, necessary in order to categorize the urban vegetation height.
         </p>
         <p class="project_h2">
-            4 bands Orthopohoto of Florence
+            Detection of urban vegetation
         </p>
-        <img class="monit_map" src="../img/monit_exam/orthophoto.png" alt="orthophoto">
+        <div class="monit_row">
+            <img class="monit_map" src="../img/monit_exam/orthophoto.png" alt="orthophoto">
+            <div class="monit_legend">
+                <p class="monit_legend_h1">4 bands Orthopohoto of Florence</p>
+            </div>
+        </div>
+        <div class="monit_row">
+            <img class="monit_map" src="../img/monit_exam/ndvi.png" alt="NDVI">
+            <div class="monit_legend">
+                <p class="monit_legend_h1">Vegetation Index</p>
+                <div class="monit_legend_row">
+                    <div class="monit_legend_box" style="background-color: #3ca432;"></div><p class="monit_legend_h3">Urban green areas</p>
+                </div>
+                <div class="monit_legend_row">
+                    <div class="monit_legend_box" style="background-color: #a2d77f;"></div><p class="monit_legend_h3">Other urban areas</p>
+                </div>
+            </div>
+        </div>
+        <div class="monit_row">
+            <img class="monit_map" src="../img/monit_exam/ndvi_diss.png" alt="urban_NDVI">
+            <div class="monit_legend">
+                <p class="monit_legend_h1">Filtered Urban Vegetation Index</p>
+                <div class="monit_legend_row">
+                    <div class="monit_legend_box" style="background-color: #3ca432;"></div><p class="monit_legend_h3">Urban green areas</p>
+                </div>
+                <div class="monit_legend_row">
+                    <div class="monit_legend_box" style="background-color: #a2d77f;"></div><p class="monit_legend_h3">Other urban areas</p>
+                </div>
+            </div>
+        </div>
+        <div class="monit_row">
+            <img class="monit_map" src="../img/monit_exam/fishnet.png" alt="urban_vegetation">
+            <div class="monit_legend">
+                <p class="monit_legend_h1">Urban Vegetation distribution</p>
+                <p class="monit_legend_h2">% compared to each cell area</p>
+                <div class="monit_legend_row">
+                    <div class="monit_legend_box" style="background-color: #ffffb2;"></div><p class="monit_legend_h3">0% - 20%</p>
+                </div>
+                <div class="monit_legend_row">
+                    <div class="monit_legend_box" style="background-color: #fecc5c;"></div><p class="monit_legend_h3">20% - 40%</p>
+                </div>
+                <div class="monit_legend_row">                        
+                    <div class="monit_legend_box" style="background-color: #fd8d3c;"></div><p class="monit_legend_h3">40% - 60%</p>
+                </div>
+                <div class="monit_legend_row">
+                    <div class="monit_legend_box" style="background-color: #f03b20;"></div><p class="monit_legend_h3">60% - 80%</p>
+                </div>
+                <div class="monit_legend_row">
+                    <div class="monit_legend_box" style="background-color: #bd0026;"></div><p class="monit_legend_h3">80% - 100%</p>
+                </div>
+            </div>
+        </div>
         <p class="project_h2">
-           Vegetation Index
+            Detection of classified urban vegetation
         </p>
-        <img class="monit_map" src="../img/monit_exam/ndvi.png" alt="NDVI">
-        <p class="project_h2">
-            Improved Urban Vegetation Index
-        </p>
-        <img class="monit_map" src="../img/monit_exam/ndvi_diss.png" alt="urban_NDVI">
-        <p class="project_h2">
-            Municipal analysis of Urban Vegetation
-        </p>
-        <img class="monit_map" src="../img/monit_exam/fishnet.png" alt="urban_vegetation">
-        <p class="project_h2">
-            DTM
-        </p>
-        <img class="monit_map" src="../img/monit_exam/dtm.png" alt="DTM">
-        <p class="project_h2">
-            DSM
-        </p>
-        <img class="monit_map" src="../img/monit_exam/dsm.png" alt="DSM">
-        <p class="project_h2">
-            Urban DSM Normalized
-        </p>
-        <img class="monit_map" src="../img/monit_exam/dsm_normalized.png" alt="DSM_normalized">
-        <p class="project_h2">
-            Urban Elements height
-        </p>
-        <img class="monit_map" src="../img/monit_exam/dtm_norm_vector.png" alt="DSM_normalized_vector">
-        <p class="project_h2">
-            Urban Vegetation height
-        </p>
-        <img class="monit_map" src="../img/monit_exam/vegetation_classified.png" alt="vegetation_classified">
-        <p class="project_h2">
-            Municipal analysis of Urban Vegetation classification
-        </p>
-        <img class="monit_map" src="../img/monit_exam/fishnet_0diss.png" alt="fishnet_0diss">
-        <img class="monit_map" src="../img/monit_exam/fishnet_1diss.png" alt="fishnet_1diss">
-        <img class="monit_map" src="../img/monit_exam/fishnet_2diss.png" alt="fishnet_2diss">
-        <img class="monit_map" src="../img/monit_exam/fishnet_210diss.png" alt="fishnet_2_10diss">
-        <img class="monit_map" src="../img/monit_exam/fishnet_10diss.png" alt="fishnet_10diss">
-        
-        
-
-
-
-       
-
-
-
-
-
-
+        <div class="monit_row">
+            <img class="monit_map" src="../img/monit_exam/dtm.png" alt="DTM">
+            <div class="monit_legend">
+                <p class="monit_legend_h1">DTM</p>
+            </div>
+        </div>
+        <div class="monit_row">
+            <img class="monit_map" src="../img/monit_exam/dsm.png" alt="DSM">
+            <div class="monit_legend">
+                <p class="monit_legend_h1">DSM</p>
+            </div>
+        </div>
+        <div class="monit_row">
+            <img class="monit_map" src="../img/monit_exam/dsm_normalized.png" alt="DSM_normalized">
+            <div class="monit_legend">
+                <p class="monit_legend_h1">Urban DSM Normalized</p>
+            </div>
+        </div>
+        <div class="monit_row">
+            <img class="monit_map" src="../img/monit_exam/dtm_norm_vector.png" alt="DSM_normalized_vector">
+            <div class="monit_legend">
+                <p class="monit_legend_h1">Urban Elements height</p>
+                <div class="monit_legend_row">
+                    <div class="monit_legend_box" style="background-color: #2b83ba;"></div><p class="monit_legend_h3">-6 - 2 m</p>
+                </div>
+                <div class="monit_legend_row">
+                    <div class="monit_legend_box" style="background-color: #abdda4;"></div><p class="monit_legend_h3">2 - 4 m</p>
+                </div>
+                <div class="monit_legend_row">                        
+                    <div class="monit_legend_box" style="background-color: #ffffbf;"></div><p class="monit_legend_h3">4 - 7 m</p>
+                </div>
+                <div class="monit_legend_row">
+                    <div class="monit_legend_box" style="background-color: #fdae61;"></div><p class="monit_legend_h3">7 - 11 m</p>
+                </div>
+                <div class="monit_legend_row">
+                    <div class="monit_legend_box" style="background-color: #d7191c;"></div><p class="monit_legend_h3">11 - 112 m</p>
+                </div>
+            </div>
+        </div>
+        <div class="monit_row">
+            <img class="monit_map" src="../img/monit_exam/vegetation_classified.png" alt="vegetation_classified">
+            <div class="monit_legend">
+                <p class="monit_legend_h1">Urban Vegetation height</p>
+                <div class="monit_legend_row">
+                    <div class="monit_legend_box" style="background-color: #a5d6a7;"></div><p class="monit_legend_h3">0 m</p>
+                </div>
+                <div class="monit_legend_row">
+                    <div class="monit_legend_box" style="background-color: #81c784;"></div><p class="monit_legend_h3">0 - 1 m</p>
+                </div>
+                <div class="monit_legend_row">                        
+                    <div class="monit_legend_box" style="background-color: #66bb6a;"></div><p class="monit_legend_h3">1 - 2 m</p>
+                </div>
+                <div class="monit_legend_row">
+                    <div class="monit_legend_box" style="background-color: #4caf50;"></div><p class="monit_legend_h3">2 - 10 m</p>
+                </div>
+                <div class="monit_legend_row">
+                    <div class="monit_legend_box" style="background-color: #43a047;"></div><p class="monit_legend_h3">>10 m</p>
+                </div>
+            </div>
+        </div>
+        <div class="monit_row">
+            <img class="monit_map" src="../img/monit_exam/fishnet_0diss.png" alt="fishnet_0diss">
+            <div class="monit_legend">
+                <p class="monit_legend_h1">Urban vegetation h: 0 m distribution</p>
+                <p class="monit_legend_h2">% compared to total urban vegetation in each cell</p>
+                <div class="monit_legend_row">
+                    <div class="monit_legend_box" style="background-color: #ffffb2;"></div><p class="monit_legend_h3">0% - 5%</p>
+                </div>
+                <div class="monit_legend_row">
+                    <div class="monit_legend_box" style="background-color: #ffdd79;"></div><p class="monit_legend_h3">5% - 10%</p>
+                </div>
+                <div class="monit_legend_row">                        
+                    <div class="monit_legend_box" style="background-color: #feb751;"></div><p class="monit_legend_h3">10% - 15%</p>
+                </div>
+                <div class="monit_legend_row">
+                    <div class="monit_legend_box" style="background-color: #fd8d3c;"></div><p class="monit_legend_h3">15% - 20%</p>
+                </div>
+                <div class="monit_legend_row">
+                    <div class="monit_legend_box" style="background-color: #f55629;"></div><p class="monit_legend_h3">20% - 30%</p>
+                </div>
+                <div class="monit_legend_row">
+                    <div class="monit_legend_box" style="background-color: #df2722;"></div><p class="monit_legend_h3">30% - 40%</p>
+                </div>
+                <div class="monit_legend_row">                        
+                    <div class="monit_legend_box" style="background-color: #bd0026;"></div><p class="monit_legend_h3">40% - 100%</p>
+                </div>
+            </div>
+        </div>
+        <div class="monit_row">
+            <img class="monit_map" src="../img/monit_exam/fishnet_1diss.png" alt="fishnet_0diss">
+            <div class="monit_legend">
+                <p class="monit_legend_h1">Urban vegetation h: 0-1 m distribution</p>
+                <p class="monit_legend_h2">% compared to total urban vegetation in each cell</p>
+                <div class="monit_legend_row">
+                    <div class="monit_legend_box" style="background-color: #ffffb2;"></div><p class="monit_legend_h3">0% - 5%</p>
+                </div>
+                <div class="monit_legend_row">
+                    <div class="monit_legend_box" style="background-color: #ffdd79;"></div><p class="monit_legend_h3">5% - 10%</p>
+                </div>
+                <div class="monit_legend_row">                        
+                    <div class="monit_legend_box" style="background-color: #feb751;"></div><p class="monit_legend_h3">10% - 15%</p>
+                </div>
+                <div class="monit_legend_row">
+                    <div class="monit_legend_box" style="background-color: #fd8d3c;"></div><p class="monit_legend_h3">15% - 20%</p>
+                </div>
+                <div class="monit_legend_row">
+                    <div class="monit_legend_box" style="background-color: #f55629;"></div><p class="monit_legend_h3">20% - 30%</p>
+                </div>
+                <div class="monit_legend_row">
+                    <div class="monit_legend_box" style="background-color: #df2722;"></div><p class="monit_legend_h3">30% - 40%</p>
+                </div>
+                <div class="monit_legend_row">                        
+                    <div class="monit_legend_box" style="background-color: #bd0026;"></div><p class="monit_legend_h3">40% - 100%</p>
+                </div>
+            </div>
+        </div>
+        <div class="monit_row">
+            <img class="monit_map" src="../img/monit_exam/fishnet_2diss.png" alt="fishnet_2diss">
+            <div class="monit_legend">
+                <p class="monit_legend_h1">Urban vegetation h: 1-2 m distribution</p>
+                <p class="monit_legend_h2">% compared to total urban vegetation in each cell</p>
+                <div class="monit_legend_row">
+                    <div class="monit_legend_box" style="background-color: #ffffb2;"></div><p class="monit_legend_h3">0% - 5%</p>
+                </div>
+                <div class="monit_legend_row">
+                    <div class="monit_legend_box" style="background-color: #ffdd79;"></div><p class="monit_legend_h3">5% - 10%</p>
+                </div>
+                <div class="monit_legend_row">                        
+                    <div class="monit_legend_box" style="background-color: #feb751;"></div><p class="monit_legend_h3">10% - 15%</p>
+                </div>
+                <div class="monit_legend_row">
+                    <div class="monit_legend_box" style="background-color: #fd8d3c;"></div><p class="monit_legend_h3">15% - 20%</p>
+                </div>
+                <div class="monit_legend_row">
+                    <div class="monit_legend_box" style="background-color: #f55629;"></div><p class="monit_legend_h3">20% - 30%</p>
+                </div>
+                <div class="monit_legend_row">
+                    <div class="monit_legend_box" style="background-color: #df2722;"></div><p class="monit_legend_h3">30% - 40%</p>
+                </div>
+                <div class="monit_legend_row">                        
+                    <div class="monit_legend_box" style="background-color: #bd0026;"></div><p class="monit_legend_h3">40% - 100%</p>
+                </div>
+            </div>
+        </div>
+        <div class="monit_row">
+            <img class="monit_map" src="../img/monit_exam/fishnet_210diss.png" alt="fishnet_210diss">
+            <div class="monit_legend">
+                <p class="monit_legend_h1">Urban vegetation h: 2-10 m distribution</p>
+                <p class="monit_legend_h2">% compared to total urban vegetation in each cell</p>
+                <div class="monit_legend_row">
+                    <div class="monit_legend_box" style="background-color: #ffffb2;"></div><p class="monit_legend_h3">0% - 5%</p>
+                </div>
+                <div class="monit_legend_row">
+                    <div class="monit_legend_box" style="background-color: #ffdd79;"></div><p class="monit_legend_h3">5% - 10%</p>
+                </div>
+                <div class="monit_legend_row">                        
+                    <div class="monit_legend_box" style="background-color: #feb751;"></div><p class="monit_legend_h3">10% - 15%</p>
+                </div>
+                <div class="monit_legend_row">
+                    <div class="monit_legend_box" style="background-color: #fd8d3c;"></div><p class="monit_legend_h3">15% - 20%</p>
+                </div>
+                <div class="monit_legend_row">
+                    <div class="monit_legend_box" style="background-color: #f55629;"></div><p class="monit_legend_h3">20% - 30%</p>
+                </div>
+                <div class="monit_legend_row">
+                    <div class="monit_legend_box" style="background-color: #df2722;"></div><p class="monit_legend_h3">30% - 40%</p>
+                </div>
+                <div class="monit_legend_row">                        
+                    <div class="monit_legend_box" style="background-color: #bd0026;"></div><p class="monit_legend_h3">40% - 100%</p>
+                </div>
+            </div>
+        </div>
+        <div class="monit_row">
+            <img class="monit_map" src="../img/monit_exam/fishnet_10diss.png" alt="fishnet_10diss">
+            <div class="monit_legend">
+                <p class="monit_legend_h1">Urban vegetation h: >10 m distribution</p>
+                <p class="monit_legend_h2">% compared to total urban vegetation in each cell</p>
+                <div class="monit_legend_row">
+                    <div class="monit_legend_box" style="background-color: #ffffb2;"></div><p class="monit_legend_h3">0% - 5%</p>
+                </div>
+                <div class="monit_legend_row">
+                    <div class="monit_legend_box" style="background-color: #ffdd79;"></div><p class="monit_legend_h3">5% - 10%</p>
+                </div>
+                <div class="monit_legend_row">                        
+                    <div class="monit_legend_box" style="background-color: #feb751;"></div><p class="monit_legend_h3">10% - 15%</p>
+                </div>
+                <div class="monit_legend_row">
+                    <div class="monit_legend_box" style="background-color: #fd8d3c;"></div><p class="monit_legend_h3">15% - 20%</p>
+                </div>
+                <div class="monit_legend_row">
+                    <div class="monit_legend_box" style="background-color: #f55629;"></div><p class="monit_legend_h3">20% - 30%</p>
+                </div>
+                <div class="monit_legend_row">
+                    <div class="monit_legend_box" style="background-color: #df2722;"></div><p class="monit_legend_h3">30% - 40%</p>
+                </div>
+                <div class="monit_legend_row">                        
+                    <div class="monit_legend_box" style="background-color: #bd0026;"></div><p class="monit_legend_h3">40% - 100%</p>
+                </div>
+            </div>
+        </div>
         <div class="separator"></div>
         <div class="separator">
             <a class="back_top" href="#back-to-top"><button>Back to top</button></a>
