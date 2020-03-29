@@ -617,6 +617,8 @@ div.main_content {
 .mdthesis_img {
     width:50%;
     align-self: center;
+    min-width:420px;
+    margin-bottom:5%;
 }
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++ FOOTER +++++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -867,9 +869,9 @@ footer {
         width:300px;
     }
     .project_h1 {
-    font-size: 24px;
-    margin-top:50px;
-    margin-bottom:50px;
+        font-size: 24px;
+        margin-top:50px;
+        margin-bottom:50px;
     }
 
     .project_h2 {
@@ -899,5 +901,9 @@ footer {
 
     .monit_legend_h2, .monit_legend_h3 {
         font-size: 13px;
+    }
+
+    .mdthesis_img {
+        min-width: 300px;
     }
 }
