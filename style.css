@@ -49,7 +49,14 @@ body.labproj_body {
 }
 
 body.monit_body {
-    background-image: url(img/monit_exam/bck_monit.png);
+    background-image: url(img/monit_exam/bck_monit.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position:center;
+}
+
+body.mdthesis_body {
+    background-image: url(img/mdthesis/bck_mdthesis.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position:center;
@@ -579,16 +586,15 @@ div.main_content {
     margin-left:2%;
 }
 
-.monit_legend_rowcontainer {
-    display: flex;
-    flex-direction: column;
+.monit_legend_rowcont {
+    margin-left:7%;
+    margin-top:1%;
 }
 
 .monit_legend_row {
-    margin-top:3%;
+    margin-top:8%;
     display: flex;
     flex-direction: row;
-    margin-left:6%;
 }
 
 .monit_legend_box {
@@ -600,7 +606,17 @@ div.main_content {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 15px;
-    margin-left:3%;
+    margin-left:5%;
+}
+
+.mdthesis_main {
+    display:flex;
+    flex-direction: column;
+}
+
+.mdthesis_img {
+    width:50%;
+    align-self: center;
 }
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++ FOOTER +++++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -759,12 +775,13 @@ footer {
         margin-bottom:5%;
         margin-top:2%;
     }
-    .monit_legend_h1, .monit_legend_h2, .monit_legend_row{
+    .monit_legend_h1, .monit_legend_h2, .monit_legend_row {
         align-self: center;
         text-align: center;
+        margin-left: 0px;
     }
-    .monit_legend_row {
-        width: 50%;
+    .monit_legend_rowcont {
+        align-self: center;
     }
 }
 
@@ -874,5 +891,13 @@ footer {
 
     .monit_map {
         min-width:100%;
+    }
+
+    .monit_legend_h1 {
+        font-size: 16px;
+    }
+
+    .monit_legend_h2, .monit_legend_h3 {
+        font-size: 13px;
     }
 }
