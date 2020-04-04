@@ -168,9 +168,10 @@ div.main_content {
 .sidebar {
     position:fixed;
     width:300px;
-    height: 100%;
+    margin-top:90px;
     background-color:rgba(255,255,255,0.7);
-    padding: 90px 60px;
+    padding: 40px 50px;
+    border-radius: 0px 30px 30px 0px;
 }
 
 .sidebar ul li {
@@ -179,11 +180,16 @@ div.main_content {
     font-weight: 400;
     font-size: 15.5px;
     line-height: 50px;
+
 }
 
 .sidebar ul li a{
     text-decoration:none;
     color: #343434;;
+}
+
+.sidebar ul li :hover{
+    text-decoration:underline;
 }
 
 .cv_content {
@@ -233,6 +239,7 @@ div.main_content {
 .text2 {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
+    line-height: 27px;
     font-size: 17px;
     margin-bottom: 15px;
 }
@@ -344,6 +351,13 @@ div.main_content {
     font-weight: 400;
     font-size: 19px;
     line-height: 30px;
+}
+
+.jumptarget_cv::before {
+    content:"";
+    display:block;
+    height:120px;
+    margin:-120px 0 0;
 }
 
 .jumptarget::before {
